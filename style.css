@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%); /* Subtle gradient background */
+    min-height: 100vh; /* Ensures it covers the full height */
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.user h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.user p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.user h3[contenteditable], .user span[contenteditable] {
+    border: 1px dashed #ccc;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.user h3[contenteditable]:focus, .user span[contenteditable]:focus {
+    outline: 2px solid #007bff;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.add-user-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.add-user-form input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}

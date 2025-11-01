@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fetch User Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive User Data from API</h1>
+    <button id="reload-btn">Reload Data</button>
+    <button id="retry-btn" style="display: none;">Retry</button>
+    
+    <div class="add-user-form">
+        <h3>Add New User (Local Only)</h3>
+        <input type="text" id="new-name" placeholder="Name">
+        <input type="email" id="new-email" placeholder="Email">
+        <input type="text" id="new-street" placeholder="Street">
+        <input type="text" id="new-city" placeholder="City">
+        <input type="text" id="new-zip" placeholder="Zipcode">
+        <button id="add-user-btn">Add User</button>
+    </div>
+    
+    <div id="user-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
